@@ -1,0 +1,47 @@
+<div class="p-3">
+
+    <form class="col-md-6 d-flex m-auto" role="search">
+        <input class="form-control me-2" type="search" aria-label="Search" name="searchTerm" type="text"
+            [(ngModel)]="searchTerm" (keyup)="search()" placeholder="Search food items...">
+        <button class="btn text-light" type="submit" (click)="search()" style="background-color: rgb(6, 83, 97);">
+            <i class="fa fa-search"></i>
+        </button>
+    </form>
+    <br>
+    <div class="card m-auto pb-3 col-md-6 ">
+
+        <div class="card-header  text-center text-light pt-3 pb-2" style="background-color: rgb(6, 83, 97);">
+            <h5>Available Food Items</h5>
+        </div>
+        <br>
+        <div class="card-body">
+            <table class="table table-bordered table-striped table-hover text-center text-capitalize">
+                <tbody>
+                    <tr *ngFor="let foodItem of filteredFoodItems | paginate:{itemsPerPage:5,currentPage:p}">
+                        <!-- <tr *ngFor="let foodItem of foodItems"> -->
+                        <td>{{foodItem.name}}</td>
+                        <td class="p-auto">&#8377;{{foodItem.price}}</td>
+                        <td>
+                            <button class="btn btn-dark btn-sm rounded-pill" (click)="addToCart(foodItem)">
+                                Add to Cart
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="col-md-6 m-auto">
+        <div class=" d-grid gap-3 mb-3">
+            <button *ngIf="authService.isAuthenticated()" class="btn btn-dark pt-3 pb-3 rounded-5" routerLink="/cart">
+                View Cart
+            </button>
+        </div>
+    </div>
+
+</div>

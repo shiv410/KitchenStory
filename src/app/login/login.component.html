@@ -1,0 +1,43 @@
+<br>
+
+
+<div class="container">
+
+    <div class="card col-md-4 m-auto" style="border-radius: 1rem;">
+
+        <div class="card-body p-4 p-lg-4 text-black">
+
+
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+                <div class="d-flex align-items-center mb-1 pb-2">
+                    <h4 class="fw-bold">Kitchen Story</h4>
+                </div>
+
+                <h6 class="fw-normal mb-3 pb-2" style="letter-spacing: 1px;">Sign into your account
+                </h6>
+
+
+                <div class="form-outline mb-4">
+                    <input type="email" id="email" formControlName="email" class="form-control">
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                    <input type="password" id="password" formControlName="password" class="form-control">
+                    <label for="password">Password</label>
+                </div>
+
+                <div class="d-grid gap-2 mb-3">
+                    <button class="btn btn-dark btn-block" type="submit">Login</button>
+                </div>
+
+                <p class="mb-3 pb-lg-2" style="color: #393f81;">Don't have an account?
+                    <a routerLink="/register" style="color: #393f81;">Register here</a>
+                </p>
+                <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+            </form>
+
+        </div>
+    </div>
+</div>

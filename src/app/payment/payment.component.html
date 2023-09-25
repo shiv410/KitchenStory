@@ -1,0 +1,42 @@
+<br>
+
+
+<div class="container p-3" style="justify-content: center;">
+    <div class="row p-3">
+
+        <div class="col-md-6">
+            <div class="card p-5">
+                <form [formGroup]="addressForm">
+                    Name:
+                    <input class="form-control" type="text" formControlName="fullName">
+
+                    Street Address:
+                    <input class="form-control" type="text" formControlName="streetAddress">
+
+                    City:
+                    <input class="form-control" type="text" formControlName="city">
+
+                    State:
+                    <input class="form-control" type="text" formControlName="state">
+
+                    Postal Code:
+                    <input class="form-control" type="text" formControlName="postalCode">
+
+                    Country:
+                    <input class="form-control" type="text" formControlName="country">
+
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card p-5">
+                <h3>Payment Gateway</h3>
+                <p>Please confirm your payment</p>
+                <p>Total Amount to Pay : {{ totalAmount }}</p>
+                <button class="btn btn-dark" (click)="confirmPayment()">Confirm Payment</button>
+            </div>
+        </div>
+
+    </div>
+</div>

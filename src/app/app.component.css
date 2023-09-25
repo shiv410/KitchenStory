@@ -1,0 +1,59 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+nav .left,
+nav .right {
+    color: white;
+    padding: 5px 10px;
+}
+
+.cart-icon {
+    position: relative;
+    display: inline-block;
+    padding: 6px 15px;
+    /* Some padding around the cart icon */
+    cursor: pointer;
+    /* Indicate the cart can be interacted with */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effects */
+}
+
+.cart-icon:hover {
+    background-color: rgba(4, 12, 151, 0.05);
+    /* Slight background on hover for better UX */
+}
+
+.cart-icon .fa-shopping-cart {
+    font-size: 1.4rem;
+    /* Increase the size of the cart icon */
+}
+
+.cart-icon .badge {
+    position: absolute;
+    top: -8px;
+    /* Position the badge slightly above the icon */
+    right: -8px;
+    font-size: 0.75rem;
+    /* Slightly decrease font size for aesthetic purposes */
+    background-color: rgb(46, 41, 41);
+    /* Use a different color for more contrast */
+
+}
+
+
+.cart-icon:hover .fa-shopping-cart {
+    transform: scale(1.2);
+    /* Slightly scale the cart icon on hover */
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+}

@@ -1,0 +1,43 @@
+<!-- <p>vieworder works!</p> -->
+
+
+<div class="container col-md-7">
+    <h4 class="">Orders for User ID: {{ userId }}</h4>
+
+    <div *ngFor="let order of orders|paginate:{itemsPerPage:2,currentPage:p}; let i = index " class="mb-4">
+        <div class="card rounded-0">
+            <div class="card-header">
+                <h5>Order ID: {{ order.id }}</h5>
+                <small class="text-muted">Date: {{ order.date | date:'medium' }}</small>
+            </div>
+            <div class="card-body">
+                <h6 class="">Ordered Items:</h6>
+                <table class="table table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Item Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of order.items; let idx = index">
+                            <td>{{ idx + 1 }}</td>
+                            <td>{{ item.foodItemName }}</td>
+                            <td>{{ item.quantity }}</td>
+                            <td>{{ item.price }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card-footer">
+                <strong>Total Amount:</strong> {{ order.totalAmount }}
+            </div>
+        </div>
+    </div>
+    <!-- <pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls> -->
+    <div class="d-flex justify-content-center mt-3">
+        <pagination-controls (pageChange)="p = $event" class="my-3 pagination page-item"></pagination-controls>
+    </div>
+</div>

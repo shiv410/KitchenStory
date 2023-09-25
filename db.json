@@ -1,0 +1,291 @@
+{
+  "users": [
+    {
+      "username": "Shivani Prajapati",
+      "email": "shivani@gmail.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "username": "Shivani Admin",
+      "email": "admin@gmail.com",
+      "password": "admin@123",
+      "id": 2
+    },
+    {
+      "username": "Wonder Women",
+      "email": "ww@gmail.com",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "username": "Bob The builder",
+      "email": "bob@gmail.com",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "username": "Iron Man",
+      "email": "im@gmail.com",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "username": "Shubh K",
+      "email": "shubh@gmail.com",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "username": "Yogesh Singh",
+      "email": "yogesh@gmail.com",
+      "password": "1234",
+      "id": 7
+    },
+    {
+      "username": "Setu Prajapati",
+      "email": "setu@gmail.com",
+      "password": "1234",
+      "id": 8
+    }
+  ],
+  "foodItems": [
+    {
+      "name": "Margherita Pizza",
+      "price": 149,
+      "id": 1
+    },
+    {
+      "name": "Veggie Paradise Pizza",
+      "price": 279,
+      "id": 2
+    },
+    {
+      "name": "Double Cheese Margherita Pizza",
+      "price": 239,
+      "id": 3
+    },
+    {
+      "name": "Farmhouse Pizza",
+      "price": 229,
+      "id": 4
+    },
+    {
+      "name": "Peppy Paneer Pizza",
+      "price": 279,
+      "id": 5
+    },
+    {
+      "name": "Indi Tandoori Paneer Pizza",
+      "price": 389,
+      "id": 6
+    },
+    {
+      "name": "Golden Corn",
+      "price": 105,
+      "id": 7
+    },
+    {
+      "name": "Blazing Onion & Paprika",
+      "price": 185,
+      "id": 8
+    },
+    {
+      "name": "Moroccan Spice Pasta Pizza - Veg",
+      "price": 199,
+      "id": 9
+    },
+    {
+      "name": "Double Cheese Margherita Pizza",
+      "price": 159,
+      "id": 10
+    },
+    {
+      "name": "Veg Sandwich",
+      "price": 139,
+      "id": 11
+    },
+    {
+      "name": "Cheese Chutney Sandwich",
+      "price": 129,
+      "id": 12
+    },
+    {
+      "name": "Tandoori Sandwich",
+      "price": 182,
+      "id": 13
+    },
+    {
+      "name": "Paneer Sandwich",
+      "price": 182,
+      "id": 14
+    },
+    {
+      "name": "Tandoori Cheese Sandwich",
+      "price": 210,
+      "id": 15
+    },
+    {
+      "name": "Paneer Cheese Sandwich",
+      "price": 210,
+      "id": 16
+    },
+    {
+      "name": " Corn Cheese Sandwich ",
+      "price": 210,
+      "id": 17
+    },
+    {
+      "name": "Veg Double Cheese Sandwich",
+      "price": 224,
+      "id": 18
+    },
+    {
+      "name": "Veg Cheese Pasta",
+      "price": 240,
+      "id": 19
+    },
+    {
+      "name": "Corn Cheese Pasta",
+      "price": 265,
+      "id": 20
+    },
+    {
+      "name": "Crispy Masala Burger",
+      "price": 100,
+      "id": 21
+    },
+    {
+      "name": "Farm Spicy Paneer Burger",
+      "price": 184,
+      "id": 22
+    },
+    {
+      "name": "Fiery Aloo Tikki Burger",
+      "price": 84,
+      "id": 23
+    },
+    {
+      "name": "Popeye Burger",
+      "price": 124,
+      "id": 24
+    },
+    {
+      "name": "Choco Lava Cake",
+      "price": 154,
+      "id": 25
+    },
+    {
+      "name": "Nutella Choco Brownie",
+      "price": 144,
+      "id": 26
+    },
+    {
+      "name": "Hot Chocolate",
+      "price": 159,
+      "id": 27
+    },
+    {
+      "name": "Paneer Cheese Pasta",
+      "price": 286,
+      "id": 28
+    },
+    {
+      "name": "Schezwan Cheese Pasta",
+      "price": 275,
+      "id": 29
+    },
+    {
+      "name": "Hot Garlic Cheese Pasta",
+      "price": 269,
+      "id": 30
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "userId": 1,
+      "items": [
+        {
+          "userId": 1,
+          "foodItemId": 22,
+          "quantity": 1,
+          "price": 184,
+          "foodItemName": "Farm Spicy Paneer Burger",
+          "id": 1
+        },
+        {
+          "userId": 1,
+          "foodItemId": 25,
+          "quantity": 1,
+          "price": 154,
+          "foodItemName": "Choco Lava Cake",
+          "id": 2
+        }
+      ],
+      "totalAmount": 338,
+      "date": "2023-09-25T13:54:31.054Z",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "userId": 1,
+          "foodItemId": 5,
+          "quantity": 1,
+          "price": 279,
+          "foodItemName": "Peppy Paneer Pizza",
+          "id": 1
+        },
+        {
+          "userId": 1,
+          "foodItemId": 18,
+          "quantity": 1,
+          "price": 224,
+          "foodItemName": "Veg Double Cheese Sandwich",
+          "id": 2
+        },
+        {
+          "userId": 1,
+          "foodItemId": 13,
+          "quantity": 1,
+          "price": 182,
+          "foodItemName": "Tandoori Sandwich",
+          "id": 3
+        }
+      ],
+      "totalAmount": 685,
+      "date": "2023-09-25T14:14:11.209Z",
+      "id": 2
+    }
+  ],
+  "payments": [
+    {
+      "userId": 1,
+      "amount": 338,
+      "address": {
+        "fullName": "Shivani Prajapati",
+        "streetAddress": "Sector-c",
+        "city": "Bhopal",
+        "state": "Madhya Pradesh",
+        "postalCode": "400200",
+        "country": "India"
+      },
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "amount": 685,
+      "address": {
+        "fullName": "Shivani Prajapati",
+        "streetAddress": "Jhanda bazaar",
+        "city": "Panna",
+        "state": "Madhya Pradesh",
+        "postalCode": "488443",
+        "country": "India"
+      },
+      "id": 2
+    }
+  ]
+}

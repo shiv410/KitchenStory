@@ -1,0 +1,48 @@
+<!-- <p>viewallfooditems works!</p> -->
+
+
+<br>
+<div class="row">
+    <div class="col-md-7 m-auto">
+        <div class="card">
+            <div class="card-header text-center text-light pt-3 pb-2" style="background-color: rgb(6, 83, 97);">
+                <h5>All Food Items Detail</h5>
+            </div>
+
+            <div class="card-body">
+                <button class="btn btn-sm btn-dark" routerLink="/addfood">Add New Food Item</button>
+                <br>
+                <br>
+                <table class="table table-bordered table-stripped text-center table-sm">
+                    <thead class="table-secondary">
+                        <tr>
+                            <th>Food No.</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor="let foodItem of foodItems|paginate:{itemsPerPage:6,currentPage:p}">
+                            <td>{{foodItem.id}}</td>
+                            <td>{{foodItem.name}}</td>
+                            <td>&#8377;{{foodItem.price}}</td>
+                            <td>
+                                <input type="button" value="Edit" class="btn btn-info"
+                                    style="--bs-btn-padding-y: .12rem; --bs-btn-padding-x: .3rem; --bs-btn-font-size: .80rem;">
+                                &nbsp;
+                                <input type="button" value="Delete" class="btn btn-danger"
+                                    style="--bs-btn-padding-y: .12rem; --bs-btn-padding-x: .3rem; --bs-btn-font-size: .80rem;"
+                                    (click)="deleteFoodItem(foodItem)">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+            </div>
+
+        </div>
+    </div>
+</div>

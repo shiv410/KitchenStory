@@ -1,0 +1,28 @@
+.row .card {
+    padding: 1.5em .5em .5em;
+    border-radius: 2em;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+#card1 {
+    background: rgb(130, 61, 35);
+    background: linear-gradient(135deg, rgba(130, 61, 35, 0.9629352473411239) 0%, rgba(188, 48, 37, 1) 0%, rgba(220, 114, 81, 1) 100%, rgba(162, 127, 112, 1) 100%);
+}
+
+#card2 {
+    background: rgb(130, 61, 35);
+    background: linear-gradient(135deg, rgba(130, 61, 35, 0.9629352473411239) 0%, rgba(104, 10, 178, 1) 0%, rgba(148, 88, 211, 1) 100%, rgba(162, 127, 112, 1) 100%);
+}
+
+.card-group .card {
+    /* border-radius: 5em; */
+    box-shadow: none;
+    border: none;
+    padding: 0;
+}
+
+.card-group .card .card-img {
+    height: auto;
+    width: 100%;
+}
